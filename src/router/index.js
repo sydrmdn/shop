@@ -1,13 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// Components
-import HelloWorld from '@/pages/HelloWorld'
-
 // Pages
-import Home from '@/pages/Home'
-// import Admin from '@/pages/Admin'
 import Cart from '@/pages/Cart'
+import Home from '@/pages/Home'
 
 // Admin components
 import Index from '@/pages/admin/Index'
@@ -51,11 +47,6 @@ export default new Router({
           component: Edit
         }
       ]
-    },
-    {
-      path: '/hello',
-      name: 'HelloWorld',
-      component: HelloWorld
     }
   ]
 })
