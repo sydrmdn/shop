@@ -1,16 +1,23 @@
 <template>
   <div>
-    <div>
+
+    <div class="tabs is-centered">
       <ul>
-        <!-- Links are to sibling routes -->
-        <li>
-          <router-link to="/admin">View Products</router-link>
-        </li>
-        <li>
-          <router-link to="/admin/new">New Product</router-link>
-        </li>
+        <router-link to="/admin" tag="li" exact>
+          <a>
+            <span class="icon is-small"><i class="material-icons">local_florist</i></span>
+            <span>Product</span>
+          </a>
+        </router-link>
+        <router-link to="/admin/new" tag="li" exact>
+          <a>
+            <span class="icon is-small"><i class="material-icons">add_circle</i></span>
+            <span>Add</span>
+          </a>
+        </router-link>
       </ul>
     </div>
+
     <!-- Outlet for children routes -->
     <router-view></router-view>
   </div>

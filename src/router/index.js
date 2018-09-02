@@ -15,37 +15,17 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  linkActiveClass: 'is-active',
   routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/cart',
-      name: 'Cart',
-      component: Cart
-    },
-    {
-      path: '/admin',
+    { path: '/', name: 'Home', component: Home },
+    { path: '/cart', name: 'Cart', component: Cart },
+    { path: '/admin',
       name: 'Admin',
       component: Index,
       children: [
-        {
-          path: 'new',
-          name: 'New',
-          component: New
-        },
-        {
-          path: '',
-          name: 'Products',
-          component: Products
-        },
-        {
-          path: 'edit/:id',
-          name: 'Edit',
-          component: Edit
-        }
+        { path: 'new', name: 'New', component: New },
+        { path: '', name: 'Products', component: Products },
+        { path: 'edit/:id', name: 'Edit', component: Edit }
       ]
     }
   ]
