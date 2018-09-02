@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <nav class="navbar is-white mb-2">
+    <nav class="navbar is-white mb-3">
       <div class="container">
         <div class="navbar-brand">
           <router-link to="/" class="navbar-item" exact>

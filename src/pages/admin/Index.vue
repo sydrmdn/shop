@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="tabs is-centered">
+    <div class="tabs is-boxed is-centered">
       <ul>
         <router-link to="/admin" tag="li" exact>
           <a>
