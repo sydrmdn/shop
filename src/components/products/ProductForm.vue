@@ -33,8 +33,9 @@
         <div class="field">
           <label class="label">Image</label>
           <div class="control">
-            <input type="text" class="input" v-model="model.image" name="image">
+            <input type="text" class="input is-danger" v-model="model.image" name="image">
           </div>
+          <p class="help is-danger">Invalid url babe.. </p>
         </div>
 
         <div class="field">
